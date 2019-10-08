@@ -1,0 +1,12 @@
+.playbutton {
+    margin-top: 2em;
+}
+
+.v {
+    background-color: white;
+    color: rgb(228, 98, 98);
+    border-radius: 50%;
+    font-size: 72px;
+    padding: 10px;
+    margin-top: 2em;
+}

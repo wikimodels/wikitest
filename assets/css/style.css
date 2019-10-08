@@ -1,18 +1,5 @@
-/* @media (max-width: 767px)
-._3SBQN5dI {
-    display: block;
-    padding: 0;
-} */
-
-
-/* body {
-    max-width: 767px;
-    display: block;
-    padding: 0;
-    background-color: blueviolet
-*/
-
-.parallax-window {
-    min-height: 96%;
-    background: transparent;
+body {
+    padding-top: 2.7em;
+    /* background-color: rgb(38, 38, 39); */
+    background-color: black
 }

@@ -29,27 +29,53 @@
 </head>
 
 <body>
-    <div class="jarallax">
-        <img class="jarallax-img" src="./assets/img/prlx1.jpg" alt="">
-        <div class="demo-table">
-            <div class="demo-table-cell">
-                <h1>Jarallax</h1>
-                <h2>This is it</h2>
-                <h3>nobody wanted to die...</h3>
+
+    <div class="container">
+
+
+        <!-- SECTION 1 -->
+        <section>
+            <div class="jarallax">
+                <img class="jarallax-img" src="./assets/img/prlx1.jpg" alt="">
+                <div class="demo-table">
+                    <div class="demo-table-cell">
+                        <h1>Jarallax</h1>
+                        <h2>This is it</h2>
+                        <h3>nobody wanted to die...</h3>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="jarallax">
-        <img class="jarallax-img" src="./assets/img/prlx2.jpg" alt="">
-        <div class="demo-table">
-            <div class="demo-table-cell">
-                <h2>PHYCO - ЭТО ПРИЗВАНИЕ</h2>
-                <h3>Такие, как я, скоро завоюют вес мир...</h3>
-                <h5>nobody wanted to die...</h5>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section>
+            <div class="jarallax">
+                <img class="jarallax-img" src="./assets/img/prlx2.jpg" alt="">
+                <div class="demo-table">
+                    <div class="demo-table-cell">
+                        <h1>Jarallax</h1>
+                        <h2>This is it</h2>
+                        <h3>nobody wanted to die...</h3>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!--
+        </section>
+
+        <!-- SECTION 3 -->
+        <section>
+            <div class="jarallax">
+                <img class="jarallax-img" src="./assets/img/prlx1.jpg" alt="">
+                <div class="demo-table">
+                    <div class="demo-table-cell">
+                        <h1>Jarallax</h1>
+                        <h2>This is it</h2>
+                        <h3>nobody wanted to die...</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
     <div class="demo-carousel">
         <div class="demo-carousel-item jarallax" data-speed="0.1">
             <img class="jarallax-img" src="images/image3.jpg" alt="">
@@ -65,7 +91,7 @@
         </div>
     </div>
     -->
-    <div class="demo-gap">
+        <!-- <div class="demo-gap">
         <div class="container">
             <p>Smooth parallax scrolling effect for background images using <strong>CSS transforms</strong> with graceful degradation for old browsers. Parallax plugin with <strong>NO dependencies</strong>. jQuery supported. <strong>Youtube</strong> and
                 <strong>Vimeo</strong> parallax supported.</p>
@@ -125,13 +151,13 @@
     </div>
 
     <!--<div class="demo-gap">-->
-    <!--<h2>Scale and Opacity</h2>-->
-    <!--</div>-->
-    <!--<div class="jarallax" data-speed="0.2" data-type="scale-opacity" style="background-image: url(images/image3.jpg);"></div>-->
-    <!--<div class="jarallax" data-type="scroll-opacity" style="background-image: url(images/image4.jpg);"></div>-->
-    <!--<div class="jarallax" data-type="opacity" style="background-image: url(images/image5.jpg);"></div>-->
-    <!--<div class="jarallax" data-speed="-0.2" data-type="scale" style="background-image: url(images/image6.jpg);"></div>-->
-
+        <!--<h2>Scale and Opacity</h2>-->
+        <!--</div>-->
+        <!--<div class="jarallax" data-speed="0.2" data-type="scale-opacity" style="background-image: url(images/image3.jpg);"></div>-->
+        <!--<div class="jarallax" data-type="scroll-opacity" style="background-image: url(images/image4.jpg);"></div>-->
+        <!--<div class="jarallax" data-type="opacity" style="background-image: url(images/image5.jpg);"></div>-->
+        <!--<div class="jarallax" data-speed="-0.2" data-type="scale" style="background-image: url(images/image6.jpg);"></div>-->
+        <!-- 
     <div class="demo-gap">
         <h2>Youtube Vimeo and &lt;video> parallax</h2>
     </div>
@@ -166,40 +192,40 @@
         <small>
             All images taken from <a href="https://unsplash.com/">https://unsplash.com/</a>
         </small>
-    </div>
+    </div>-->-->
 
-    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-    <script type="text/javascript">
-        // object-fit polyfill run
-        objectFitImages();
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+        <script type="text/javascript">
+            // object-fit polyfill run
+            objectFitImages();
 
-        /* init Jarallax */
-        jarallax(document.querySelectorAll('.jarallax'));
+            /* init Jarallax */
+            jarallax(document.querySelectorAll('.jarallax'));
 
-        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-            keepImg: true,
-        });
+            jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+                keepImg: true,
+            });
 
-        /* init Flickity Carousel + Jarallax inside it */
-        // new Flickity( '.demo-carousel', {
-        //     initialIndex: 1,
-        //     autoPlay: 3000,
-        //     pauseAutoPlayOnHover: false,
-        //     pageDots: false,
-        //     prevNextButtons: false,
-        //     wrapAround: true
-        // });
-        // jarallax(document.querySelectorAll('.demo-carousel .jarallax'), {
-        //     elementInViewport: document.querySelectorAll('.demo-carousel')
-        // });
+            /* init Flickity Carousel + Jarallax inside it */
+            // new Flickity( '.demo-carousel', {
+            //     initialIndex: 1,
+            //     autoPlay: 3000,
+            //     pauseAutoPlayOnHover: false,
+            //     pageDots: false,
+            //     prevNextButtons: false,
+            //     wrapAround: true
+            // });
+            // jarallax(document.querySelectorAll('.demo-carousel .jarallax'), {
+            //     elementInViewport: document.querySelectorAll('.demo-carousel')
+            // });
 
-        /* init Jarallax with jQuery */
-        // $('.jarallax').jarallax({
-        //     speed: 0.5,
-        //     imgWidth: 1366,
-        //     imgHeight: 768
-        // });
-    </script>
+            /* init Jarallax with jQuery */
+            // $('.jarallax').jarallax({
+            //     speed: 0.5,
+            //     imgWidth: 1366,
+            //     imgHeight: 768
+            // });
+        </script>
 </body>
 
 </html>

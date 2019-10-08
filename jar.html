@@ -281,11 +281,13 @@
         objectFitImages();
 
         /* init Jarallax */
-        jarallax(document.querySelectorAll('.jarallax'));
+        jarallax(document.querySelectorAll('.jarallax'), {
+            disableParallax: /iPad|iPhone|iPod|Android/
+        });
 
         jarallax(document.querySelectorAll('.jarallax-keep-img'), {
             keepImg: true,
-            disableParallax: /iPad|iPhone|iPod|Android/
+            //disableParallax: /iPad|iPhone|iPod|Android/
         });
 
         /* init Flickity Carousel + Jarallax inside it */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jarallax | JavaScript parallax scrolling with NO dependencies</title>
+
+    <meta name="description" content="Pure JavaScript parallax scrolling effect. jQuery supported. Youtube and Vimeo parallax supported.">
+    <link href="./assets/css/demo.css" rel="stylesheet">
+
+    <!-- Object Fit polyfill -->
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+
+    <!-- Jarallax -->
+    <link href="./assets/css/jarallax.css" rel="stylesheet">
+    <script src="./assets/scripts/jarallax.js"></script>
+</head>
+
+<body>
+    <div class="jarallax">
+        <img class="jarallax-img" src="./assets/img/prl-1-1920by1260.jpg" alt="">
+        <div class="demo-table">
+            <div class="demo-table-cell">
+                <h1>Jarallax</h1>
+            </div>
+        </div>
+    </div>
+    <div class="jarallax">
+        <img class="jarallax-img" src="./assets/img/prl-2-1920by1260.jpg" alt="">
+        <div class="demo-table">
+            <div class="demo-table-cell">
+                <h1>Jarallax</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript">
+        // object-fit polyfill run
+        objectFitImages();
+
+        /* init Jarallax & disable it on mobiles*/
+        jarallax(document.querySelectorAll('.jarallax'), {
+            disableParallax: /iPad|iPhone|iPod|Android/
+        });
+
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
+
+        /* init Flickity Carousel + Jarallax inside it */
+        // new Flickity( '.demo-carousel', {
+        //     initialIndex: 1,
+        //     autoPlay: 3000,
+        //     pauseAutoPlayOnHover: false,
+        //     pageDots: false,
+        //     prevNextButtons: false,
+        //     wrapAround: true
+        // });
+        // jarallax(document.querySelectorAll('.demo-carousel .jarallax'), {
+        //     elementInViewport: document.querySelectorAll('.demo-carousel')
+        // });
+
+        /* init Jarallax with jQuery */
+        // $('.jarallax').jarallax({
+        //     speed: 0.5,
+        //     imgWidth: 1366,
+        //     imgHeight: 768
+        // });
+    </script>
+</body>
+
+</html>

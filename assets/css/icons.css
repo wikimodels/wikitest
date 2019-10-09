@@ -1,0 +1,21 @@
+.tile-control-icon {
+    background-color: white;
+    color: rgb(228, 98, 98);
+    border-radius: 50%;
+    font-size: 68px;
+    padding: 10px;
+}
+
+.title-icon-close {
+    background-color: black;
+    border-radius: 50%;
+    font-size: 45px;
+    padding: 10px;
+}
+
+
+/* Defines the location of Modal CLOSE-botton */
+
+.close {
+    padding-top: 1.8em;
+}

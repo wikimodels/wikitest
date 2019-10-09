@@ -1,0 +1,65 @@
+.tile-table {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+.tile-table-row {
+    display: table-row
+}
+
+.tile-table-cell-top,
+.tile-table-cell-bottom {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: center;
+    padding-top: 4em;
+}
+
+.tile-table-cell-top {
+    text-align: center
+}
+
+.tile-table-cell-bottom {
+    text-align: right
+}
+
+.tile-controls {
+    /*Расстояние от нижней кромки экрана*/
+    padding-bottom: 4em;
+    /*Расстояние от правой кромкки*/
+    padding-right: 0.6em;
+}
+
+
+/*Расстояние между кнопками*/
+
+.tile-control+.tile-control {
+    margin-top: 1.5em;
+}
+
+.tile-fonts h1 {
+    font-size: 1.8em;
+}
+
+.tile-fonts h2 {
+    font-size: 1.6rem;
+}
+
+.tile-fonts h3 {
+    font-size: 1.4rem;
+}
+
+.tile-fonts h4 {
+    font-size: 1.2rem;
+}
+
+.tile-fonts h5 {
+    font-size: 1rem;
+}
+
+.tile-fonts h6 {
+    font-size: 0.8rem;
+}
